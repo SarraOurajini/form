@@ -1,0 +1,39 @@
+<!DOCTYPE.<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body class="background">
+    <div class="form-pos">
+    <form onsubmit="valid()" class="pos" action="" method="POST">
+    <div class="text">
+            <h1>Name:</h1>
+            <input onmouseover ="focusF(document.getElementById('but1'))" class="butt" id="but1" type="text">
+    </div>
+    <div class="text">
+            <h1>Address:</h1>
+            <input onmouseover="focusF(document.getElementById('but2'))" class="butt" id="but2" type="text">        
+    </div>
+    <div class="text">
+            <h1>E-mail Address:</h1>
+            <input onmouseover="focusF(document.getElementById('but3'))" onmouseout ="validmail()" class="butt" id="but3" type="text">
+    </div>
+    <div class="text">
+            <h1>Password:</h1>
+                <input onmouseover="focusF(document.getElementById('but4'))" onmouseout ="validpassword()"class="butt" id="but4"type="text">
+    </div>
+    <div class="text">
+            <h1>Comments:</h1>
+                <textarea onmouseover="focusF(document.getElementById('but5'))" id="but5" class="butt"></textarea>
+                <input  class="butt" type="submit" value="send">
+                <input class="butt" type="reset" value="reset">
+     </form>
+    </div>
+</div>
+</body>
+</html>
